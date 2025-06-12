@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Loja Virtual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <div id="header-container"></div>
+
+    <!-- Conteúdo do Perfil -->
+    <div class="container">
+        <div class="form-container">
+            <h1 class="form-title">Meu Perfil</h1>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <i class="fas fa-user-circle fa-5x"></i>
+                </div>
+                <div class="profile-details">
+                    <h2 id="user-name">Carregando...</h2>
+                    <p id="user-email">Carregando...</p>
+                </div>
+            </div>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" id="nome" class="form-input" value="Cliente Exemplo">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" class="form-input" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" id="telefone" class="form-input" value="(11) 98765-4321">
+                </div>
+                <div class="form-group">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input type="text" id="endereco" class="form-input" value="Av. Paulista, 1000">
+                </div>
+                <div class="form-group">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" id="cidade" class="form-input" value="São Paulo">
+                </div>
+                <div class="form-group">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" id="cep" class="form-input" value="01310-100">
+                </div>
+                <button type="submit" class="form-button">Salvar Alterações</button>
+            </form>
+
+            <div class="profile-sections">
+                <h3>Meus Pedidos</h3>
+                <div class="order-history">
+                    <div class="order-item">
+                        <div class="order-header">
+                            <span class="order-number">Pedido #1001</span>
+                            <span class="order-date">18/05/2025</span>
+                            <span class="order-status">Entregue</span>
+                        </div>
+                        <div class="order-products">
+                            <p>1x Bolo de Ninho - R$ 45,00</p>
+                            <p>2x Brigadeiro - R$ 8,00</p>
+                        </div>
+                        <div class="order-total">
+                            <p>Total: R$ 53,00</p>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="order-header">
+                            <span class="order-number">Pedido #982</span>
+                            <span class="order-date">05/05/2025</span>
+                            <span class="order-status">Entregue</span>
+                        </div>
+                        <div class="order-products">
+                            <p>1x Petit Gateau - R$ 24,00</p>
+                            <p>1x Milkshake - R$ 18,00</p>
+                        </div>
+                        <div class="order-total">
+                            <p>Total: R$ 42,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se o usuário está logado
+            const isLoggedIn = localStorage.getItem('userLoggedIn') === 'true';
+            const userEmail = localStorage.getItem('userEmail');
+            
+            if (!isLoggedIn) {
+                // Redirecionar para a página de login se não estiver logado
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Preencher informações do perfil
+            document.getElementById('user-name').textContent = 'Cliente Exemplo';
+            document.getElementById('user-email').textContent = userEmail;
+            document.getElementById('email').value = userEmail;
+            
+            // Manipular o formulário de perfil
+            const profileForm = document.getElementById('profile-form');
+            
+            if (profileForm) {
+                profileForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Simular salvamento dos dados
+                    showNotification('Perfil atualizado com sucesso!', 'success');
+                });
+            }
+        });
+        
+        // Função para exibir notificações
+        function showNotification(message, type) {
+            // Verificar se já existe uma notificação
+            let notification = document.querySelector('.notification');
+            
+            if (notification) {
+                notification.remove();
+            }
+            
+            // Criar nova notificação
+            notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            // Remover após 3 segundos
+            setTimeout(() => {
+                notification.classList.add('hide');
+                setTimeout(() => {
+                    notification.remove();
+                }, 500);
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>

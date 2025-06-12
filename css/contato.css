@@ -1,0 +1,341 @@
+ .contato-banner {
+     background-color: var(--rosa-claro);
+     padding: 40px 0;
+     text-align: center;
+     margin-bottom: 30px;
+ }
+
+ .contato-banner h1 {
+     color: var(--preto-texto);
+     font-size: 2.5rem;
+     margin-bottom: 15px;
+ }
+
+ .contato-banner p {
+     max-width: 800px;
+     margin: 0 auto;
+     font-size: 1.1rem;
+ }
+
+ .contato-container {
+     display: flex;
+     gap: 40px;
+     margin-bottom: 50px;
+ }
+
+ .contato-info {
+     flex: 0 0 35%;
+ }
+
+ .contato-form {
+     flex: 0 0 65%;
+     background-color: white;
+     padding: 30px;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .info-card {
+     background-color: white;
+     border-radius: 10px;
+     padding: 25px;
+     margin-bottom: 20px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .info-card h3 {
+     color: var(--preto-texto);
+     margin-bottom: 20px;
+     font-size: 1.5rem;
+     border-bottom: 2px solid var(--rosa-principal);
+     padding-bottom: 10px;
+ }
+
+ .info-item {
+     display: flex;
+     align-items: flex-start;
+     margin-bottom: 15px;
+ }
+
+ .info-icone {
+     flex: 0 0 40px;
+     height: 40px;
+     background-color: var(--rosa-claro);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-right: 15px;
+ }
+
+ .info-icone i {
+     color: var(--rosa-principal);
+     font-size: 1.2rem;
+ }
+
+ .info-texto {
+     flex: 1;
+ }
+
+ .info-texto h4 {
+     margin-bottom: 5px;
+     color: var(--preto-texto);
+ }
+
+ .info-texto p {
+     color: #666;
+     line-height: 1.6;
+ }
+
+ .redes-sociais {
+     display: flex;
+     gap: 15px;
+     margin-top: 20px;
+ }
+
+ .rede-social {
+     width: 40px;
+     height: 40px;
+     background-color: var(--rosa-claro);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.3s ease;
+ }
+
+ .rede-social:hover {
+     background-color: var(--rosa-principal);
+     transform: translateY(-3px);
+ }
+
+ .rede-social i {
+     color: white;
+     font-size: 1.2rem;
+ }
+
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ .form-label {
+     display: block;
+     margin-bottom: 8px;
+     font-weight: 600;
+     color: var(--preto-texto);
+ }
+
+ .form-control {
+     width: 100%;
+     padding: 12px 15px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1rem;
+     transition: border-color 0.3s ease;
+ }
+
+ .form-control:focus {
+     outline: none;
+     border-color: var(--rosa-principal);
+ }
+
+ textarea.form-control {
+     min-height: 120px;
+     resize: vertical;
+ }
+
+ .btn-enviar {
+     background-color: var(--rosa-principal);
+     color: white;
+     padding: 12px 25px;
+     border: none;
+     border-radius: 25px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     display: inline-block;
+ }
+
+ .btn-enviar:hover {
+     background-color: #ff8ab0;
+     transform: translateY(-2px);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .chat-container {
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+
+ .chat-header {
+     background-color: var(--rosa-principal);
+     color: white;
+     padding: 15px 20px;
+     display: flex;
+     align-items: center;
+ }
+
+ .chat-header h3 {
+     margin: 0;
+     font-size: 1.3rem;
+ }
+
+ .chat-status {
+     width: 10px;
+     height: 10px;
+     background-color: #4CAF50;
+     border-radius: 50%;
+     margin-right: 10px;
+ }
+
+ .chat-messages {
+     height: 300px;
+     padding: 20px;
+     overflow-y: auto;
+ }
+
+ .message {
+     margin-bottom: 15px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .message-content {
+     max-width: 80%;
+     padding: 10px 15px;
+     border-radius: 15px;
+     position: relative;
+ }
+
+ .message-time {
+     font-size: 0.8rem;
+     color: #999;
+     margin-top: 5px;
+ }
+
+ .message.received {
+     align-items: flex-start;
+ }
+
+ .message.sent {
+     align-items: flex-end;
+ }
+
+ .message.received .message-content {
+     background-color: #f1f1f1;
+     border-bottom-left-radius: 5px;
+ }
+
+ .message.sent .message-content {
+     background-color: var(--rosa-claro);
+     border-bottom-right-radius: 5px;
+ }
+
+ .chat-input {
+     display: flex;
+     padding: 15px;
+     border-top: 1px solid #eee;
+ }
+
+ .chat-input input {
+     flex: 1;
+     padding: 10px 15px;
+     border: 1px solid #ddd;
+     border-radius: 25px;
+     outline: none;
+ }
+
+ .chat-input button {
+     background-color: var(--rosa-principal);
+     color: white;
+     border: none;
+     border-radius: 25px;
+     padding: 10px 20px;
+     margin-left: 10px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .chat-input button:hover {
+     background-color: #ff8ab0;
+ }
+
+ .faq-section {
+     background-color: #f9f9f9;
+     padding: 50px 0;
+ }
+
+ .faq-section h2 {
+     text-align: center;
+     margin-bottom: 40px;
+ }
+
+ .accordion {
+     max-width: 800px;
+     margin: 0 auto;
+ }
+
+ .accordion-item {
+     background-color: white;
+     border-radius: 5px;
+     margin-bottom: 15px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+     overflow: hidden;
+ }
+
+ .accordion-header {
+     padding: 15px 20px;
+     background-color: white;
+     cursor: pointer;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: background-color 0.3s ease;
+ }
+
+ .accordion-header:hover {
+     background-color: #f9f9f9;
+ }
+
+ .accordion-header h3 {
+     margin: 0;
+     font-size: 1.1rem;
+     color: var(--preto-texto);
+ }
+
+ .accordion-icon {
+     color: var(--rosa-principal);
+     transition: transform 0.3s ease;
+ }
+
+ .accordion-content {
+     padding: 0 20px;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.3s ease, padding 0.3s ease;
+ }
+
+ .accordion-item.active .accordion-content {
+     padding: 20px;
+     max-height: 1000px;
+ }
+
+ .accordion-item.active .accordion-icon {
+     transform: rotate(180deg);
+ }
+
+ @media (max-width: 992px) {
+     .contato-container {
+         flex-direction: column;
+     }
+
+     .contato-info,
+     .contato-form {
+         flex: 0 0 100%;
+     }
+ }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/produtoDestaque.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <div id="header-container"></div>
+
+    <!-- Slider de Imagens -->
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="img/Baner1.jpg"
+                    alt="Promoção 1">
+            </div>
+            <div class="slide">
+                <img src="img/Baner2.jpg"
+                    alt="Promoção 2">
+            </div>
+            <div class="slide">
+                <img src="img/Baner3.jpg" alt="Promoção 3">
+            </div>
+            <div class="slide">
+                <img src="img/Baner4.jpg" alt="Promoção 4">
+            </div>
+        </div>
+        <button class="slider-btn prev" id="prev-btn">❮</button>
+        <button class="slider-btn next" id="next-btn">❯</button>
+    </div>
+
+    <!-- Sobre Nós -->
+    <section class="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma loja virtual comprometida em oferecer os melhores produtos com qualidade e preço justo. Atuamos no
+            mercado há mais de 10 anos, levando até você as últimas tendências em moda, eletrônicos e produtos para o
+            seu dia a dia.</p>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <div class="container produtos-destaque">
+        <h2 class="text-center">Produtos em Destaque</h2>
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <div class="produto-imagem-container">
+                    <img src="img/BoloNinho.jpg" alt="Produto 1">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Bolo de Ninho</h3>
+                    <p class="produto-desc">Massa branca macia com recheio generoso de leite Ninho e cobertura de chantilly.</p>
+                    <p class="produto-preco">R$ 45,00</p>
+                    <button class="produto-btn" data-id="b4" data-nome="Bolo de Ninho" data-preco="45,00" data-imagem="img/BoloNinho.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem-container">
+                    <img src="img/PetitGateau.jpg" alt="Produto 2">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Petit Gateau</h3>
+                    <p class="produto-desc">Bolinho quente de chocolate com casquinha por fora e recheio cremoso, servido com sorvete.</p>
+                    <p class="produto-preco">R$ 24,00</p>
+                    <button class="produto-btn" data-id="b13" data-nome="Petit Gateau" data-preco="24,00" data-imagem="img/PetitGateau.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem-container">
+                    <img src="img/Donuts.jpg" alt="Produto 3">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Donuts (diversos sabores)</h3>
+                    <p class="produto-desc">Rosquinhas fritas ou assadas, com coberturas variadas como chocolate, morango e baunilha.</p>
+                    <p class="produto-preco">R$ 12,00</p>
+                    <button class="produto-btn" data-id="b12" data-nome="Donuts (diversos sabores)" data-preco="12,00" data-imagem="img/Donuts.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+
+            <div class="produto-card">
+                <div class="produto-imagem-container">
+                    <img src="img/Milkshakes.jpg" alt="Produto 4">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Milkshakes</h3>
+                    <p class="produto-desc">Bebida cremosa feita com sorvete, leite e sabores como chocolate, morango, baunilha ou Ovomaltine</p>
+                    <p class="produto-preco">R$ 18,00</p>
+                    <button class="produto-btn" data-id="b16" data-nome="Milkshakes" data-preco="18,00" data-imagem="img/Milkshakes.jpg">
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Localização -->
+    <section class="localizacao">
+        <h2 class="text-center mb-3">Nossa Localização</h2>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.65342658502206!3d-23.565734367638356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1624477360701!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/carrinho.js"></script>
+</body>
+
+</html>

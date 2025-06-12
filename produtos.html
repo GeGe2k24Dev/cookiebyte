@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Loja Virtual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/produtos.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <div id="header-container"></div>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="produtos-header">
+            <h1>Nossos Produtos</h1>
+            <p>Encontre os melhores produtos para você</p>
+        </header>
+
+        <!-- Navegação entre grupos -->
+        <div class="grupos-navegacao">
+            <button class="grupo-btn ativo" data-grupo="Bolos">Bolos</button>
+            <button class="grupo-btn" data-grupo="Quitutes">Quitutes</button>
+            <button class="grupo-btn" data-grupo="Bakery">Bakery</button>
+            <button class="grupo-btn" data-grupo="Gelados">Gelados</button>
+            <button class="grupo-btn" data-grupo="Fit">Fit</button>
+        </div>
+
+        <!-- Grupo 1: Bolos -->
+        <div class="grupo-produtos ativo" id="Bolos">
+            <h2 class="grupo-titulo">Bolos</h2>
+            <div class="produtos-grade">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/BoloChololate.jpg" alt="Bolo de Chocolate" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolo de Chocolate</h3>
+                        <p class="produto-desc">Um clássico irresistível, com massa fofinha de chocolate e cobertura cremosa de brigadeiro.</p>
+                        <p class="produto-preco">R$ 35,00</p>
+                        <button class="produto-btn" data-id="b1" data-nome="Bolo de Chocolate" data-preco="35.00" data-imagem="img/BoloChololate.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/BoloPrestigio.jpg" alt="Bolo de Prestígio" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolo de Prestígio</h3>
+                        <p class="produto-desc">Combinação perfeita de chocolate com recheio de coco cremoso, coberto com ganache.</p>
+                        <p class="produto-preco">R$ 40,00</p>
+                        <button class="produto-btn" data-id="b2" data-nome="Bolo de Prestígio" data-preco="40.00" data-imagem="img/BoloPrestigio.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/RedVelvet.jpg" alt="Bolo Red Velvet" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolo Red Velvet</h3>
+                        <p class="produto-desc">Bolo de massa avermelhada com toque de cacau, recheado com cream cheese e finalizado com cobertura suave.</p>
+                        <p class="produto-preco">R$ 45,00</p>
+                        <button class="produto-btn" data-id="b3" data-nome="Bolo Red Velvet" data-preco="45.00" data-imagem="img/RedVelvet.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/BoloNinho.jpg" alt="Bolo de Ninho" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolo de Ninho</h3>
+                        <p class="produto-desc">Massa branca macia com recheio generoso de leite Ninho e cobertura de chantilly.</p>
+                        <p class="produto-preco">R$ 45,00</p>
+                        <button class="produto-btn" data-id="b4" data-nome="Bolo de Ninho" data-preco="45.00" data-imagem="img/BoloNinho.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 2: Quitutes -->
+        <div class="grupo-produtos" id="Quitutes">
+            <h2 class="grupo-titulo">Quitutes</h2>
+            <div class="produtos-grade">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/Brigadeiro.jpg" alt="Brigadeiro de Chocolate" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Brigadeiro de Chocolate </h3>
+                        <p class="produto-desc">Docinho brasileiro feito com leite condensado, chocolate e coberto com granulado.</p>
+                        <p class="produto-preco">R$ 25,00 (25 unidades)</p>
+                        <button class="produto-btn" data-id="b5" data-nome="Brigadeiro de Chocolate" data-preco="25.00" data-imagem="img/Brigadeiro.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/BrigadeiroMorango.jpg" alt="Brigadeiro de Morango" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Brigadeiro de Morango (Bicho de Pé)</h3>
+                        <p class="produto-desc">Versão rosa do brigadeiro tradicional, com sabor de morango e coberto com açúcar.</p>
+                        <p class="produto-preco">R$ 30,00 (25 unidades)</p>
+                        <button class="produto-btn" data-id="b6" data-nome="Brigadeiro de Morango" data-preco="30.00" data-imagem="img/BrigadeiroMorango.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/BrigadeiroNinho.jpg" alt="Brigadeiro de Ninho" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Brigadeiro de Ninho</h3>
+                        <p class="produto-desc">Delicioso brigadeiro branco feito com leite Ninho e finalizado com leite em pó por cima.</p>
+                        <p class="produto-preco">R$ 40,00 (25 unidades)</p>
+                        <button class="produto-btn" data-id="b7" data-nome="Brigadeiro de Ninho" data-preco="40.00" data-imagem="img/BrigadeiroNinho.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/Beijinho.jpg" alt="Beijinho" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Beijinho</h3>
+                        <p class="produto-desc">Doce de coco com leite condensado, coberto com açúcar e um cravinho no topo.</p>
+                        <p class="produto-preco">R$ 25,00 (25 unidades)</p>
+                        <button class="produto-btn" data-id="b8" data-nome="Beijinho" data-preco="25.00" data-imagem="img/Beijinho.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 3: Bakery -->
+        <div class="grupo-produtos" id="Bakery">
+            <h2 class="grupo-titulo">Bakery</h2>
+            <div class="produtos-grade">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/Croissant.jpg" alt="Bolo de Chocolate" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Croissant de Chocolate</h3>
+                        <p class="produto-desc">Massa folhada leve e amanteigada recheada com chocolate meio amargo.</p>
+                        <p class="produto-preco">R$ 30,00  (5 unidades)</p>
+                        <button class="produto-btn" data-id="b9" data-nome="Croissant de Chocolate" data-preco="30,00" data-imagem="img/Croissant.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/Cookie.jpg" alt="Bolo de Prestígio" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Cookie de Nutella</h3>
+                        <p class="produto-desc">Biscoito macio com pedaços de chocolate e recheio cremoso de Nutella.</p>
+                        <p class="produto-preco">R$ 10,00</p>
+                        <button class="produto-btn" data-id="b10" data-nome="Cookie de Nutella" data-preco="10,00" data-imagem="img/Cookie.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/Carolina.jpg" alt="Bolo Red Velvet" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Carolina com Leite Condensado</h3>
+                        <p class="produto-desc">Massa choux crocante por fora e recheada com creme de leite condensado.</p>
+                        <p class="produto-preco">R$ 12,00 (6 unidades)</p>
+                        <button class="produto-btn" data-id="b11" data-nome="Carolina com Leite Condensado" data-preco="12,00" data-imagem="img/Carolina.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/Donuts.jpg" alt="Bolo de Ninho" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Donuts (diversos sabores)</h3>
+                        <p class="produto-desc">Rosquinhas fritas ou assadas, com coberturas variadas como chocolate, morango e baunilha.</p>
+                        <p class="produto-preco">R$ 12,00</p>
+                        <button class="produto-btn" data-id="b12" data-nome="Donuts (diversos sabores)" data-preco="12,00" data-imagem="img/Donuts.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 4: Gelados -->
+        <div class="grupo-produtos" id="Gelados">
+            <h2 class="grupo-titulo">Gelados</h2>
+            <div class="produtos-grade">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/PetitGateau.jpg" alt="Bolo de Chocolate" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Petit Gateau</h3>
+                        <p class="produto-desc">Bolinho quente de chocolate com casquinha por fora e recheio cremoso, servido com sorvete.</p>
+                        <p class="produto-preco">R$ 24,00</p>
+                        <button class="produto-btn" data-id="b13" data-nome="Petit Gateau" data-preco="24,00" data-imagem="img/PetitGateau.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/BolachaGelada.jpg" alt="Bolo de Prestígio" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolacha Gelada</h3>
+                        <p class="produto-desc">Sobremesa gelada feita com camadas de bolacha, creme e frutas ou chocolate.</p>
+                        <p class="produto-preco">R$ 8,00</p>
+                        <button class="produto-btn" data-id="b14" data-nome="Bolacha Gelada" data-preco="8,00" data-imagem="img/BolachaGelada.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/Casquinha.jpg" alt="Bolo Red Velvet" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Casquinhas</h3>
+                        <p class="produto-desc">Sorvetes servidos em cones crocantes, com opções de 1 ou 2 bolas de diversos sabores.</p>
+                        <p class="produto-preco">R$ 12,00</p>
+                        <button class="produto-btn" data-id="b15" data-nome="Casquinhas" data-preco="12,00" data-imagem="img/Casquinha.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="img/Milkshakes.jpg" alt="Bolo de Ninho" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Milkshakes</h3>
+                        <p class="produto-desc">Bebida cremosa feita com sorvete, leite e sabores como chocolate, morango, baunilha ou Ovomaltine</p>
+                        <p class="produto-preco">R$ 18,00</p>
+                        <button class="produto-btn" data-id="b16" data-nome="Milkshakes" data-preco="32.00" data-imagem="img/Milkshakes.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grupo 5: Fit -->
+        <div class="grupo-produtos" id="Fit">
+            <h2 class="grupo-titulo">Fit</h2>
+            <div class="produtos-grade">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="https://source.unsplash.com/random/400x400/?chocolate-cake" alt="Bolo de Chocolate" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolo de Chocolate</h3>
+                        <p class="produto-desc">Um clássico irresistível, com massa fofinha de chocolate e cobertura cremosa de brigadeiro.</p>
+                        <p class="produto-preco">R$ 24,00</p>
+                        <button class="produto-btn" data-id="b17" data-nome="Bolo de Chocolate" data-preco="24.00" data-imagem="https://source.unsplash.com/random/400x400/?chocolate-cake">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="https://source.unsplash.com/random/400x400/?coconut-cake" alt="Bolo de Prestígio" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolo de Prestígio</h3>
+                        <p class="produto-desc">Combinação perfeita de chocolate com recheio de coco cremoso, coberto com ganache.</p>
+                        <p class="produto-preco">R$ 40,00</p>
+                        <button class="produto-btn" data-id="b18" data-nome="Bolo de Prestígio" data-preco="40.00" data-imagem="https://source.unsplash.com/random/400x400/?coconut-cake">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="https://source.unsplash.com/random/400x400/?red-velvet-cake" alt="Bolo Red Velvet" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolo Red Velvet</h3>
+                        <p class="produto-desc">Bolo de massa avermelhada com toque de cacau, recheado com cream cheese e finalizado com cobertura suave.</p>
+                        <p class="produto-preco">R$ 29,90</p>
+                        <button class="produto-btn" data-id="b19" data-nome="Bolo Red Velvet" data-preco="29.90" data-imagem="https://source.unsplash.com/random/400x400/?red-velvet-cake">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto-card">
+                    <div class="produto-imagem-container">
+                        <img src="https://source.unsplash.com/random/400x400/?milk-cake" alt="Bolo de Ninho" class="produto-imagem">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Bolo de Ninho</h3>
+                        <p class="produto-desc">Massa branca macia com recheio generoso de leite Ninho e cobertura de chantilly.</p>
+                        <p class="produto-preco">R$ 32,00</p>
+                        <button class="produto-btn" data-id="b20" data-nome="Bolo de Ninho" data-preco="32.00" data-imagem="https://source.unsplash.com/random/400x400/?milk-cake">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/carrinho.js"></script>
+</body>
+
+</html>

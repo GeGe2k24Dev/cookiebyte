@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaques - Doce Sabor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/desctaque.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <div id="header-container"></div>
+
+    <!-- Banner de Destaques -->
+    <div class="destaques-banner">
+        <div class="container">
+            <h1>Destaques e Promoções</h1>
+            <p>Confira nossas ofertas especiais, novidades e produtos em destaque. Atualizamos esta página regularmente para trazer a você o melhor da nossa confeitaria!</p>
+        </div>
+    </div>
+
+    <!-- Promoções em Destaque -->
+    <div class="container">
+        <h2 class="text-center mb-4">Promoções Imperdíveis</h2>
+        
+        <div class="row" style="display: flex; flex-wrap: wrap; margin: 0 -15px;">
+            <div class="col" style="flex: 0 0 33.333%; padding: 0 15px; box-sizing: border-box;">
+                <div class="promocao-card">
+                    <div class="promocao-imagem">
+                        <img src="img/BoloChololate.jpg" alt="Bolo de Chocolate">
+                    </div>
+                    <div class="promocao-conteudo">
+                        <h3 class="promocao-titulo">Bolo de Chocolate Especial</h3>
+                        <p class="promocao-descricao">Nosso delicioso bolo de chocolate com cobertura especial de ganache e decoração artesanal. Perfeito para qualquer ocasião especial ou para adoçar seu dia.</p>
+                        <div class="promocao-preco">
+                            <span class="preco-antigo">R$ 35,00</span>
+                            <span class="preco-novo">R$ 24,90</span>
+                        </div>
+                        <button class="produto-btn" data-id="p1" data-nome="Bolo de Chocolate Promoção" data-preco="24,90" data-imagem="img/BoloChololate.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col" style="flex: 0 0 33.333%; padding: 0 15px; box-sizing: border-box;">
+                <div class="promocao-card">
+                    <div class="promocao-imagem">
+                        <img src="img/BrigadeiroMorango.jpg" alt="Kit Brigadeiros Gourmet">
+                    </div>
+                    <div class="promocao-conteudo">
+                        <h3 class="promocao-titulo">Kit Brigadeiros Gourmet</h3>
+                        <p class="promocao-descricao">Caixa com 30 unidades de brigadeiros gourmet em sabores variados: tradicional, morango, ninho, pistache, café e maracujá. Uma explosão de sabores!</p>
+                        <div class="promocao-preco">
+                            <span class="preco-antigo">R$ 36,00</span>
+                            <span class="preco-novo">R$ 29,90</span>
+                        </div>
+                        <button class="produto-btn" data-id="p2" data-nome="Brigadeiros Promoção" data-preco="29,90" data-imagem="img/BrigadeiroMorango.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col" style="flex: 0 0 33.333%; padding: 0 15px; box-sizing: border-box;">
+                <div class="promocao-card">
+                    <div class="promocao-imagem">
+                        <img src="img/Donuts.jpg" alt="Combo Donuts">
+                    </div>
+                    <div class="promocao-conteudo">
+                        <h3 class="promocao-titulo">Combo 4 Donuts</h3>
+                        <p class="promocao-descricao">Leve 4 donuts por um preço especial! Escolha entre os sabores: chocolate, morango, doce de leite e tradicional com granulado. Fofos e irresistíveis!</p>
+                        <div class="promocao-preco">
+                            <span class="preco-antigo">R$ 48,00</span>
+                            <span class="preco-novo">R$ 28,90</span>
+                        </div>
+                        <button class="produto-btn" data-id="p3" data-nome="Donuts Promoção" data-preco="28,90" data-imagem="img/Donuts.jpg">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Novidades -->
+    <div class="container">
+        <div class="novidades-titulo">
+            <h2>Novidades da Confeitaria</h2>
+        </div>
+        
+        <div class="novidade-item">
+            <div class="novidade-imagem">
+                <img src="img/RedVelvet.jpg" alt="Bolo Red Velvet">
+            </div>
+            <div class="novidade-conteudo">
+                <div class="novidade-data">Publicado em 15 de maio de 2025</div>
+                <h3 class="promocao-titulo">Novo Bolo Red Velvet</h3>
+                <p class="promocao-descricao">
+                    Estamos muito felizes em apresentar a mais nova adição ao nosso cardápio: o autêntico Bolo Red Velvet! Após meses de testes e aperfeiçoamento da receita, conseguimos criar uma versão que mantém a textura aveludada e o sabor suave característicos deste clássico da confeitaria americana.
+                </p>
+                <p class="promocao-descricao">
+                    Nosso Red Velvet é feito com ingredientes selecionados, incluindo cacau de alta qualidade que proporciona aquele tom vermelho-escuro tão desejado, sem excesso de corantes artificiais. A cobertura é preparada com o tradicional cream cheese, que equilibra perfeitamente a doçura do bolo com seu toque levemente ácido.
+                </p>
+                <p class="promocao-descricao">
+                    Disponível em diversos tamanhos, para você degustar sozinho ou compartilhar com quem ama. Venha experimentar esta novidade que já está fazendo sucesso entre nossos clientes!
+                </p>
+            </div>
+        </div>
+        
+        <div class="novidade-item">
+            <div class="novidade-imagem">
+                <img src="img/Cookie.jpg" alt="Cookies Artesanais">
+            </div>
+            <div class="novidade-conteudo">
+                <div class="novidade-data">Publicado em 10 de maio de 2025</div>
+                <h3 class="promocao-titulo">Linha de Cookies Artesanais</h3>
+                <p class="promocao-descricao">
+                    Nossa confeitaria acaba de lançar uma linha completa de cookies artesanais que prometem conquistar até os paladares mais exigentes. Desenvolvidos pelo nosso chef confeiteiro com mais de 15 anos de experiência, estes cookies combinam a crocância perfeita por fora com um interior macio e cheio de sabor.
+                </p>
+                <p class="promocao-descricao">
+                    A nova linha inclui sabores clássicos como chocolate chip e baunilha com gotas de chocolate, além de opções mais elaboradas como chocolate branco com cranberry, pistache com chocolate meio amargo e caramelo salgado. Todos são preparados diariamente em nossa cozinha, garantindo frescor e qualidade em cada mordida.
+                </p>
+                <p class="promocao-descricao">
+                    Os cookies estão disponíveis individualmente ou em caixas decorativas, perfeitas para presentear ou para um momento especial de indulgência. Experimente esta novidade que está fazendo o maior sucesso!
+                </p>
+            </div>
+        </div>
+        
+        <div class="novidade-item">
+            <div class="novidade-imagem">
+                <img src="img/Milkshakes.jpg" alt="Milkshakes Especiais">
+            </div>
+            <div class="novidade-conteudo">
+                <div class="novidade-data">Publicado em 5 de maio de 2025</div>
+                <h3 class="promocao-titulo">Milkshakes Especiais para o Verão</h3>
+                <p class="promocao-descricao">
+                    Com a chegada dos dias mais quentes, nossa confeitaria preparou uma seleção especial de milkshakes artesanais que são verdadeiras sobremesas no copo! Preparados com sorvete cremoso de fabricação própria e ingredientes frescos, nossos milkshakes são a opção perfeita para refrescar seu dia.
+                </p>
+                <p class="promocao-descricao">
+                    A nova linha inclui sabores tradicionais como chocolate, baunilha e morango, além de criações exclusivas como Ovomaltine com caramelo, cookies & cream com calda de chocolate e o espetacular Red Velvet com cream cheese. Cada milkshake é servido em copos especiais e decorados com chantilly, calda e toppings variados.
+                </p>
+                <p class="promocao-descricao">
+                    Além disso, oferecemos opções veganas e sem lactose, para que todos possam desfrutar destas delícias refrescantes. Venha experimentar e encontre seu sabor favorito!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+        <div class="container">
+            <h2>Fique por dentro das novidades!</h2>
+            <p>Cadastre-se em nossa newsletter e receba em primeira mão informações sobre promoções exclusivas, lançamentos de produtos e dicas de confeitaria.</p>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/carrinho.js"></script>
+</body>
+
+</html>

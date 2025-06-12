@@ -1,0 +1,150 @@
+/* Estilos para a página de perfil */
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.profile-avatar {
+    margin-right: 1.5rem;
+    color: #ff6b6b;
+}
+
+.profile-details h2 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.profile-details p {
+    margin: 0;
+    color: #666;
+}
+
+.profile-sections {
+    margin-top: 2rem;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.profile-sections h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.order-history {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.order-number {
+    font-weight: 600;
+}
+
+.order-date {
+    color: #666;
+}
+
+.order-status {
+    color: #4caf50;
+    font-weight: 500;
+}
+
+.order-products {
+    margin: 0.5rem 0;
+}
+
+.order-products p {
+    margin: 0.25rem 0;
+}
+
+.order-total {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Notificações */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-out;
+}
+
+.notification.success {
+    background-color: #4caf50;
+}
+
+.notification.error {
+    background-color: #f44336;
+}
+
+.notification.hide {
+    animation: slideOut 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

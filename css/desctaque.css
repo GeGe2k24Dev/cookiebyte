@@ -1,0 +1,221 @@
+ .destaques-banner {
+            background-color: var(--rosa-claro);
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .destaques-banner h1 {
+            color: var(--preto-texto);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .destaques-banner p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        .promocao-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .promocao-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .promocao-imagem {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .promocao-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .promocao-card:hover .promocao-imagem img {
+            transform: scale(1.05);
+        }
+        
+        .promocao-conteudo {
+            padding: 20px;
+        }
+        
+        .promocao-titulo {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--preto-texto);
+        }
+        
+        .promocao-descricao {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .promocao-preco {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .preco-antigo {
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 10px;
+        }
+        
+        .preco-novo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #e74c3c;
+        }
+        
+        .produto-btn {
+            background-color: var(--rosa-principal);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .produto-btn:hover {
+            background-color: #ff8ab0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .novidades-titulo {
+            text-align: center;
+            margin: 50px 0 30px;
+            position: relative;
+        }
+        
+        .novidades-titulo h2 {
+            display: inline-block;
+            background-color: #f7d9e4;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .novidades-titulo::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background-color: var(--rosa-principal);
+            z-index: 0;
+        }
+        
+        .novidade-item {
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .novidade-imagem {
+            flex: 0 0 40%;
+        }
+        
+        .novidade-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .novidade-conteudo {
+            flex: 0 0 60%;
+            padding: 20px;
+        }
+        
+        .novidade-data {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        
+        .newsletter {
+            background-color: var(--rosa-claro);
+            padding: 50px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .newsletter h2 {
+            margin-bottom: 20px;
+        }
+        
+        .newsletter p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 25px 0 0 25px;
+            outline: none;
+        }
+        
+        .newsletter-btn {
+            background-color: var(--rosa-principal);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 0 25px 25px 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .newsletter-btn:hover {
+            background-color: #ff8ab0;
+        }
+        
+        @media (max-width: 768px) {
+            .novidade-item {
+                flex-direction: column;
+            }
+            
+            .novidade-imagem, .novidade-conteudo {
+                flex: 0 0 100%;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+            
+            .newsletter-input {
+                border-radius: 25px;
+                margin-bottom: 10px;
+            }
+            
+            .newsletter-btn {
+                border-radius: 25px;
+            }
+        }
+ 

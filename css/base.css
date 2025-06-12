@@ -1,0 +1,69 @@
+/* Base CSS - Estilos globais e variáveis */
+:root {
+    --rosa-principal: #ffa5c5;
+    --rosa-claro: #FFD6E5;
+    --azul-claro: #A2D2FF;
+    --cinza-fundo: #F5F5F5;
+    --preto-texto: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f7d9e4;
+    color: var(--preto-texto);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Utilitários */
+.text-center {
+    text-align: center;
+}
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+/* Responsividade base */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}

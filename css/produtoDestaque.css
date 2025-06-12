@@ -1,0 +1,10 @@
+.produto-btn {
+    display: inline-block;
+    background-color: var(--rosa-principal);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s;
+}
